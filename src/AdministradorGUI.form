@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_CD" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_FdP" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_TdE" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_MD" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_TdA" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_CI" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_POaO" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_CF" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_Q" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_AL" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_CV" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_EdD" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_CE" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_IdO" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="Button_SO" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_CD" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_CI" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_CV" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_FdP" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_POaO" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_EdD" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_TdE" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_CF" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_CE" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_MD" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_Q" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_IdO" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Button_TdA" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_AL" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                  <Component id="Button_SO" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="80" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="Button_SO">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SISTEMAS OPERATIVOS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_SOActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_CD">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CALCULO DIFERENCIAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CDActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_IdO">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="INVESTIGACION DE OPERACIONES"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_IdOActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_FdP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="FUNDAMENTOS DE PROGRAMACION"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_FdPActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_CE">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CULTURA EMPRESARIAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CEActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_TdE">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TALLER DE ETICA"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_TdEActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_EdD">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ESTRUCTURA DE DATOS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_EdDActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_MD">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MATEMATICAS DISCRETAS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_MDActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_CV">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CALCULO VECTORIAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CVActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_TdA">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TALLER DE ADMINISTRACION"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_TdAActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_AL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ALGEBRA LINEAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ALActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_Q">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="QUIMICA"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_QActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_CF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CONTABILIDAD FINANCIERA"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CFActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_POaO">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PROGRAMACION ORIENTADA A OBJETOS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_POaOActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_CI">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CALCULO INTEGRAL"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CIActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Felix Titling" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Informacion sobre las materias"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
