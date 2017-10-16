@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author Alejandro Carrillo 15/10/17
  */
 public class Liga {
-    String NOMBRE, NOCONTROL;
+    String NOMBRE, NOCONTROL, NIP;
     int SEMESTRE;
     Double PROMEDIO;
     
@@ -20,7 +20,7 @@ public class Liga {
 
     
     //Constructor con parámetros
-    public Liga(String nombre, String nocontrol,
+    public Liga(String nombre, String nocontrol, String NIP,
             int semestre, double promedio){
     NOMBRE = nombre;
     NOCONTROL = nocontrol;

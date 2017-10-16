@@ -65,11 +65,11 @@ public class MateriasGUI extends javax.swing.JFrame {
         Button_EdD = new javax.swing.JButton();
         Button_CV = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Label_Nombre = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        Label_Semestre = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        Label_Promedio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -181,15 +181,15 @@ public class MateriasGUI extends javax.swing.JFrame {
 
         jLabel1.setText("Nombre:");
 
-        jLabel2.setText("Nombre:");
+        Label_Nombre.setText("Nombre:");
 
         jLabel3.setText("Periodo");
 
-        jLabel4.setText("Periodo");
+        Label_Semestre.setText("Periodo");
 
         jLabel5.setText("Promedio");
 
-        jLabel6.setText("Promedio");
+        Label_Promedio.setText("Promedio");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -222,15 +222,15 @@ public class MateriasGUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(42, 42, 42)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Label_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4)
+                        .addComponent(Label_Semestre)
                         .addGap(34, 34, 34)
                         .addComponent(jLabel5)))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6)
+                .addComponent(Label_Promedio)
                 .addContainerGap(75, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -239,11 +239,11 @@ public class MateriasGUI extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2)
+                    .addComponent(Label_Nombre)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4)
+                    .addComponent(Label_Semestre)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(Label_Promedio))
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Button_CD, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -373,14 +373,14 @@ public class MateriasGUI extends javax.swing.JFrame {
     private javax.swing.JButton Button_SO;
     private javax.swing.JButton Button_TdA;
     private javax.swing.JButton Button_TdE;
+    public static javax.swing.JLabel Label_Nombre;
+    public static javax.swing.JLabel Label_Promedio;
+    public static javax.swing.JLabel Label_Semestre;
     private javax.swing.ButtonGroup buttonGroupS1;
     private javax.swing.ButtonGroup buttonGroupS2;
     private javax.swing.ButtonGroup buttonGroupS3;
     private javax.swing.JLabel jLabel1;
-    public static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    public static javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    public static javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

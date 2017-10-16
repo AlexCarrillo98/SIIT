@@ -24,10 +24,10 @@ public class Lista {
         return(primerLiga == null);
     }
     
-    public void insertarUltimo(String nombre, String nocontrol,
+    public void insertarUltimo(String nombre, String nocontrol, String nip,
             int semestre, double promedio){
         //Crear nuevo nodo
-        Liga Nodo = new Liga(nombre, nocontrol, semestre, promedio);
+        Liga Nodo = new Liga(nombre, nocontrol, nip, semestre, promedio);
         //Asignarlo como primero
         Nodo.Next = primerLiga;
         primerLiga = Nodo;

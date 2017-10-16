@@ -16,18 +16,18 @@ import javax.swing.JPanel;
  * @author Administrador
  */
 public class IngresoGUI extends javax.swing.JFrame {
-
+    Lista ALUMNOS = new Lista();
     /**
      * Creates new form GUI
      */
-    //IMPLEMENTACIÓN CON ARRAYS
+    /*IMPLEMENTACIÓN CON ARRAYS
     String noControl[]={"16041201","16041202","16041203","16041204","16041205","16041206","16041207","16041208","16041209","16041210"};
     String nip[]={"1111","2222","3333","4444","5555","6666","7777","8888","9999","0000"};
     String nombre[]={"CARRILLO MARTINEZ ALEJANDRO DE JESUS","DERAS BONILLA CRISTOPHER JARED","MEDRANO CORRAL ALEJANDRO",
         "SALINAS JAQUEZ BERNARDO","ALARCON GARVALENA LAURA YESENIA","ALVAREZ DELGADO ROQUE EMILIO","AMAYA COLACION HELADIO",
         "CASTAÑEDA ALVARADO CHRISTOPHER","CELIS CARRILLO SAMANTHA DEL CARMEN","CHAVARRIA CABRALES AGUSTIN"};
     int semestre[]={3,2,3,3,2,1,2,3,3,2};
-    
+    */
     
 
     
@@ -46,18 +46,11 @@ public class IngresoGUI extends javax.swing.JFrame {
         
         //IMPLEMENTACIÓN CON LISTAS
         Random r = new Random();
-        Lista ALUMNOS = new Lista();
-                                            //Nombre,                    NoControl, Semestre, Random Double(50-100)
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro Medrano Corral", "16042345", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
-        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+
+                                            //Nombre,                 NoControl,   NIP, Semestre, Random Double(50-100)
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", "1530", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro Medrano Corral", "16042345", "6576", 3, 50 + (100 - 50) * r.nextDouble());
+        
         
     }
 
@@ -168,6 +161,7 @@ public class IngresoGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIngresarActionPerformed
+        /*IMPLEMENTACIÓN CON LISTAS
         String no=TextFieldNoControl.getText();
         String nip2=PasswordFieldContraseña.getText();
         if(no.equals("") || nip2.equals("")){
@@ -197,6 +191,21 @@ public class IngresoGUI extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null,"El numero de control no esta registrado");
                 TextFieldNoControl.setText("");
                 PasswordFieldContraseña.setText("");
+            }
+        }*/
+        String Control = TextFieldNoControl.getText();
+        String NIP = PasswordFieldContraseña.getText();
+        if(ALUMNOS.buscar(Control)==null){
+            JOptionPane.showMessageDialog(null,"Número de control no existente","Error!",JOptionPane.ERROR_MESSAGE);
+        }else{
+            if(!ALUMNOS.buscar(Control).NIP.equals(NIP)){
+                JOptionPane.showMessageDialog(null,"NIP Incorrecto","Error!",JOptionPane.ERROR_MESSAGE);
+            }else{
+                System.out.println("Ingreso correcto");
+                MateriasGUI m = new MateriasGUI();
+                MateriasGUI.Label_Nombre.setText(ALUMNOS.buscar(Control).NOMBRE);
+                MateriasGUI.Label_Semestre.setText(String.valueOf(ALUMNOS.buscar(Control).SEMESTRE));
+                MateriasGUI.Label_Promedio.setText(String.valueOf(ALUMNOS.buscar(Control).PROMEDIO));
             }
         }
     }//GEN-LAST:event_ButtonIngresarActionPerformed
