@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metodos;
 
 /**
  *
- * @author aliec
+ * @author Alejandro Carrilo 15/10/17
  */
-public class Lista {
+public class MetodosListas extends Lista{
     
+    public MetodosListas(){
+    }
+    
+    public boolean isEmpty(){
+    
+    }
 }

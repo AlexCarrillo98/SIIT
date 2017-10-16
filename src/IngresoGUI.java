@@ -41,15 +41,16 @@ public class IngresoGUI extends javax.swing.JFrame {
         initComponents();
         this.setResizable(false);
         //Codigo para poner imagen de fondo
-        /*((JPanel)getContentPane()).setOpaque(false);
+        ((JPanel)getContentPane()).setOpaque(false);
         ImageIcon uno=new ImageIcon(this.getClass().getResource("/AtM.jpg"));
         JLabel fondo= new JLabel();
         fondo.setIcon(uno);
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
-        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());*/
+        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
+        
         for(int i=0;i<10;i++){
              if(p1==null){
-              Lista_CD q=new Lista_CD();
+              Lista_CD q = new Lista_CD();
               q.noControl=noControl[i];
               q.nombre=nombre[i];
               q.liga=null;
@@ -139,34 +140,43 @@ public class IngresoGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        TextFieldNoControl = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        ButtonIngresar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        ButtonSoyAdmin = new javax.swing.JButton();
+        PasswordFieldContraseña = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Myriad Pro", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 102, 255));
         jLabel1.setText("Número de Control");
 
+        jLabel2.setFont(new java.awt.Font("Myriad Pro", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
         jLabel2.setText("NIP");
 
-        jButton1.setText("INGRESAR");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ButtonIngresar.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        ButtonIngresar.setForeground(new java.awt.Color(0, 102, 255));
+        ButtonIngresar.setText("INGRESAR");
+        ButtonIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ButtonIngresarActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Felix Titling", 1, 18)); // NOI18N
-        jLabel3.setText("SISTEMA INTEGRAL DE INFORMACIÓN");
+        jLabel3.setFont(new java.awt.Font("Gloss And Bloom", 1, 34)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel3.setText("Sistema InTegral de Información 2.0");
 
-        jButton2.setText("¡SOY ADMINISTRADOR!");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        ButtonSoyAdmin.setFont(new java.awt.Font("Myriad Pro", 1, 18)); // NOI18N
+        ButtonSoyAdmin.setForeground(new java.awt.Color(0, 102, 255));
+        ButtonSoyAdmin.setText("¡SOY ADMINISTRADOR!");
+        ButtonSoyAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ButtonSoyAdminActionPerformed(evt);
             }
         });
 
@@ -177,56 +187,59 @@ public class IngresoGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(jLabel3))
+                        .addGap(0, 18, Short.MAX_VALUE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 694, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(211, 211, 211)
-                        .addComponent(jLabel1)
-                        .addGap(33, 33, 33)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(246, 246, 246)
-                        .addComponent(jLabel2)
-                        .addGap(71, 71, 71)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(266, 266, 266)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(232, 232, 232)
-                        .addComponent(jButton2)))
-                .addContainerGap(115, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(286, 286, 286)
+                                .addComponent(ButtonIngresar))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(191, 191, 191)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(ButtonSoyAdmin)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addGap(33, 33, 33))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jLabel2)
+                                                .addGap(83, 83, 83)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(PasswordFieldContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(TextFieldNoControl, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel3)
-                .addGap(98, 98, 98)
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addComponent(jLabel1))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextFieldNoControl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(75, 75, 75)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel2))
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PasswordFieldContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(ButtonIngresar)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addComponent(ButtonSoyAdmin)
+                .addGap(43, 43, 43))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String no=jTextField1.getText();
-        String nip2=jTextField2.getText();
+    private void ButtonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIngresarActionPerformed
+        String no=TextFieldNoControl.getText();
+        String nip2=PasswordFieldContraseña.getText();
         if(no.equals("") || nip2.equals("")){
             JOptionPane.showMessageDialog(null,"Asegurate de llenar todos los datos de usuario");
         }else{
@@ -247,18 +260,18 @@ public class IngresoGUI extends javax.swing.JFrame {
                    this.setVisible(false);
                 }else{
                 JOptionPane.showMessageDialog(null,"El nip ingresado no es correcto");
-                jTextField1.setText("");
-                jTextField2.setText(""); 
+                TextFieldNoControl.setText("");
+                PasswordFieldContraseña.setText(""); 
                 }
             }else{
                 JOptionPane.showMessageDialog(null,"El numero de control no esta registrado");
-                jTextField1.setText("");
-                jTextField2.setText("");
+                TextFieldNoControl.setText("");
+                PasswordFieldContraseña.setText("");
             }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_ButtonIngresarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void ButtonSoyAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSoyAdminActionPerformed
         String usuario=JOptionPane.showInputDialog(null,"Ingresa el usuario");
         if(usuario.equals("admin")){
             String pass=JOptionPane.showInputDialog("Ingresa el nip");
@@ -273,7 +286,7 @@ public class IngresoGUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"EL usuario no es correcto");
         }
     
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_ButtonSoyAdminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,12 +323,12 @@ public class IngresoGUI extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton ButtonIngresar;
+    private javax.swing.JButton ButtonSoyAdmin;
+    private javax.swing.JPasswordField PasswordFieldContraseña;
+    private javax.swing.JTextField TextFieldNoControl;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

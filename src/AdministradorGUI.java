@@ -233,7 +233,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);
     }
     
     public void lista_FdP(){
@@ -244,7 +244,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res); 
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);
     }
     
     public void lista_TdE(){
@@ -255,7 +255,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res); 
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);
     }
     
     public void lista_MD(){
@@ -266,7 +266,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);  
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     public void lista_TdA(){
@@ -277,7 +277,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);  
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE); 
     }
     
     public void lista_CI(){
@@ -288,7 +288,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);   
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE); 
     }
     
     public void lista_POaO(){
@@ -299,7 +299,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);
     }
     
     public void lista_CF(){
@@ -310,7 +310,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);
     }
     
     public void lista_Q(){
@@ -321,7 +321,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res); 
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE); 
     }
     
     public void lista_AL(){
@@ -332,7 +332,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-               JOptionPane.showMessageDialog(null, res);  
+               JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     public void lista_CV(){
@@ -343,7 +343,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-        JOptionPane.showMessageDialog(null, res);  
+        JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     public void lista_EdD(){
@@ -354,7 +354,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-        JOptionPane.showMessageDialog(null, res);   
+        JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     public void lista_CE(){
@@ -365,7 +365,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-        JOptionPane.showMessageDialog(null, res); 
+        JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE); 
     }
     
     public void lista_IdO(){
@@ -376,7 +376,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-        JOptionPane.showMessageDialog(null, res);  
+        JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     public void lista_SO(){
@@ -387,7 +387,7 @@ public class AdministradorGUI extends javax.swing.JFrame {
                     res+=r.noControl+"          "+r.nombre+""+"\n";
                     r=r.liga;
         }while(r!=null);
-        JOptionPane.showMessageDialog(null, res);  
+        JOptionPane.showMessageDialog(null, res,"Intregrantes del grupo",JOptionPane.PLAIN_MESSAGE);  
     }
     
     private void Button_SOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_SOActionPerformed
