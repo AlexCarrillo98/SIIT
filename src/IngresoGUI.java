@@ -1,4 +1,5 @@
 
+import java.util.Random;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
@@ -19,24 +20,19 @@ public class IngresoGUI extends javax.swing.JFrame {
     /**
      * Creates new form GUI
      */
+    //IMPLEMENTACIÓN CON ARRAYS
     String noControl[]={"16041201","16041202","16041203","16041204","16041205","16041206","16041207","16041208","16041209","16041210"};
     String nip[]={"1111","2222","3333","4444","5555","6666","7777","8888","9999","0000"};
-    String nombre[]={"CARRILLO MARTINEZ ALEJANDRO DE JESUS","DERAS BONILLA CRISTOPHER JARED","MEDRANO CORRAL ALEJANDRO","SALINAS JAQUEZ BERNARDO","ALARCON GARVALENA LAURA YESENIA","ALVAREZ DELGADO ROQUE EMILIO","AMAYA COLACION HELADIO","CASTAÑEDA ALVARADO CHRISTOPHER","CELIS CARRILLO SAMANTHA DEL CARMEN","CHAVARRIA CABRALES AGUSTIN"};
-    Lista_CD p1,f1;
-    Lista_FdP p2,f2;
-    Lista_TdE p3,f3;
-    Lista_MD p4,f4;
-    Lista_TdA p5,f5;
-    Lista_CI p6,f6;
-    Lista_POaO p7,f7;
-    Lista_CF p8,f8;
-    Lista_Q p9,f9;
-    Lista_AL p10,f10;
-    Lista_CV p11,f11;
-    Lista_EdD p12,f12;
-    Lista_CE p13,f13;
-    Lista_IdO p14,f14;
-    Lista_SO p15,f15;
+    String nombre[]={"CARRILLO MARTINEZ ALEJANDRO DE JESUS","DERAS BONILLA CRISTOPHER JARED","MEDRANO CORRAL ALEJANDRO",
+        "SALINAS JAQUEZ BERNARDO","ALARCON GARVALENA LAURA YESENIA","ALVAREZ DELGADO ROQUE EMILIO","AMAYA COLACION HELADIO",
+        "CASTAÑEDA ALVARADO CHRISTOPHER","CELIS CARRILLO SAMANTHA DEL CARMEN","CHAVARRIA CABRALES AGUSTIN"};
+    int semestre[]={3,2,3,3,2,1,2,3,3,2};
+    
+    
+
+    
+    
+    
     public IngresoGUI() {
         initComponents();
         this.setResizable(false);
@@ -48,87 +44,21 @@ public class IngresoGUI extends javax.swing.JFrame {
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
         fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
         
-        for(int i=0;i<10;i++){
-             if(p1==null){
-              Lista_CD q = new Lista_CD();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              p1=q;
-              f1=q;
-          }else{
-              Lista_CD q=new Lista_CD();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              f1.liga=q;
-              f1=q;
-          }
-             
-              if(p2==null){
-              Lista_FdP q=new Lista_FdP();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              p2=q;
-              f2=q;
-          }else{
-              Lista_FdP q=new Lista_FdP();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              f2.liga=q;
-              f2=q;
-          }
-              
-                if(p3==null){
-              Lista_TdE q=new Lista_TdE();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              p3=q;
-              f3=q;
-          }else{
-              Lista_TdE q=new Lista_TdE();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              f3.liga=q;
-              f3=q;
-          }
-                
-                  if(p4==null){
-              Lista_MD q=new Lista_MD();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              p4=q;
-              f4=q;
-          }else{
-              Lista_MD q=new Lista_MD();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              f4.liga=q;
-              f4=q;
-          }
-                  
-            if(p5==null){
-              Lista_TdA q=new Lista_TdA();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              p5=q;
-              f5=q;
-          }else{
-              Lista_TdA q=new Lista_TdA();
-              q.noControl=noControl[i];
-              q.nombre=nombre[i];
-              q.liga=null;
-              f5.liga=q;
-              f5=q;
-          }
-        }
+        //IMPLEMENTACIÓN CON LISTAS
+        Random r = new Random();
+        Lista ALUMNOS = new Lista();
+                                            //Nombre,                    NoControl, Semestre, Random Double(50-100)
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro Medrano Corral", "16042345", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        ALUMNOS.insertarUltimo("Alejandro de Jesús Carrillo Mártinez", "16041213", 3, 50 + (100 - 50) * r.nextDouble());
+        
     }
 
     /**
@@ -272,9 +202,12 @@ public class IngresoGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonIngresarActionPerformed
 
     private void ButtonSoyAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSoyAdminActionPerformed
+        //Estos los datos para ingresar como administrador (Profesor)
         String usuario=JOptionPane.showInputDialog(null,"Ingresa el usuario");
+        //Usuario: admin
         if(usuario.equals("admin")){
             String pass=JOptionPane.showInputDialog("Ingresa el nip");
+            //Password: 2371
             if(pass.equals("2371")){
                 AdministradorGUI n=new AdministradorGUI();
                 n.setVisible(true);
