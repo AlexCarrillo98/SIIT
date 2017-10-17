@@ -195,18 +195,21 @@ public class IngresoGUI extends javax.swing.JFrame {
         }*/
         String Control = TextFieldNoControl.getText();
         String NIP = PasswordFieldContraseña.getText();
-        if(ALUMNOS.buscar(Control)==null){
-            JOptionPane.showMessageDialog(null,"Número de control no existente","Error!",JOptionPane.ERROR_MESSAGE);
-        }else{
-            if(!ALUMNOS.buscar(Control).NIP.equals(NIP)){
-                JOptionPane.showMessageDialog(null,"NIP Incorrecto","Error!",JOptionPane.ERROR_MESSAGE);
-            }else{
+        System.out.println(ALUMNOS.buscar(Control).NIP+" "+ALUMNOS.buscar(Control).NOMBRE);
+        if(!(ALUMNOS.buscar(Control)==null)){
+            if(ALUMNOS.buscar(Control).NIP.equals(NIP)){
                 System.out.println("Ingreso correcto");
                 MateriasGUI m = new MateriasGUI();
                 MateriasGUI.Label_Nombre.setText(ALUMNOS.buscar(Control).NOMBRE);
                 MateriasGUI.Label_Semestre.setText(String.valueOf(ALUMNOS.buscar(Control).SEMESTRE));
                 MateriasGUI.Label_Promedio.setText(String.valueOf(ALUMNOS.buscar(Control).PROMEDIO));
+                this.setVisible(false);
+                m.setVisible(true);
+            }else{
+                JOptionPane.showMessageDialog(null,"NIP Incorrecto","Error!",JOptionPane.ERROR_MESSAGE);
             }
+        }else{
+            JOptionPane.showMessageDialog(null,"Número de control no existente","Error!",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_ButtonIngresarActionPerformed
 

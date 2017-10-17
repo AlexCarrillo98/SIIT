@@ -15,9 +15,9 @@ public class TestLiga {
     public static void main (String[] args){
     Lista algo = new Lista();
     
-    algo.insertarUltimo("Alecaño", "16041213", 3, Math.random());
-    algo.insertarUltimo("Bernie","16042312", 3, Math.random());
-    algo.insertarUltimo("Donaldo","16043212", 2, 76.5);
+    algo.insertarUltimo("Alecaño", "16041213", "1530", 3, Math.random());
+    algo.insertarUltimo("Bernie","16042312", "5421", 3, Math.random());
+    algo.insertarUltimo("Donaldo","16043212", "2356", 2, 76.5);
     algo.imprimir();
         System.out.println("*********************BÚSQUEDA************************\n\n");
         String control = JOptionPane.showInputDialog(null,"NoControl a buscar: ");

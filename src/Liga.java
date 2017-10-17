@@ -20,12 +20,13 @@ public class Liga {
 
     
     //Constructor con parámetros
-    public Liga(String nombre, String nocontrol, String NIP,
+    public Liga(String nombre, String nocontrol, String nip,
             int semestre, double promedio){
     NOMBRE = nombre;
     NOCONTROL = nocontrol;
     SEMESTRE = semestre;
     PROMEDIO = promedio;
+    NIP = nip;
     }
     
     public void imprimir(){

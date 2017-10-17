@@ -179,26 +179,48 @@ public class MateriasGUI extends javax.swing.JFrame {
         Button_CV.setText("CALCULO VECTORIAL");
         buttonGroupS3.add(Button_CV);
 
+        jLabel1.setFont(new java.awt.Font("Lato", 1, 14)); // NOI18N
         jLabel1.setText("Nombre:");
 
+        Label_Nombre.setFont(new java.awt.Font("Lato", 0, 14)); // NOI18N
         Label_Nombre.setText("Nombre:");
+        Label_Nombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jLabel3.setFont(new java.awt.Font("Lato", 1, 14)); // NOI18N
         jLabel3.setText("Periodo");
 
+        Label_Semestre.setFont(new java.awt.Font("Lato", 0, 14)); // NOI18N
         Label_Semestre.setText("Periodo");
+        Label_Semestre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jLabel5.setFont(new java.awt.Font("Lato", 1, 14)); // NOI18N
         jLabel5.setText("Promedio");
 
+        Label_Promedio.setFont(new java.awt.Font("Lato", 0, 14)); // NOI18N
         Label_Promedio.setText("Promedio");
+        Label_Promedio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
+                .addContainerGap(42, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(42, 42, 42)
+                        .addComponent(Label_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(Label_Semestre)
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(Label_Promedio)
+                        .addGap(51, 51, 51))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Button_CD, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Button_FdP, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -218,20 +240,8 @@ public class MateriasGUI extends javax.swing.JFrame {
                             .addComponent(Button_EdD, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Button_CE, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Button_IdO, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Button_SO, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(42, 42, 42)
-                        .addComponent(Label_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(Label_Semestre)
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel5)))
-                .addGap(18, 18, 18)
-                .addComponent(Label_Promedio)
-                .addContainerGap(75, Short.MAX_VALUE))
+                            .addComponent(Button_SO, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(123, 123, 123))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -244,7 +254,7 @@ public class MateriasGUI extends javax.swing.JFrame {
                     .addComponent(Label_Semestre)
                     .addComponent(jLabel5)
                     .addComponent(Label_Promedio))
-                .addGap(57, 57, 57)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Button_CD, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Button_CI, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
